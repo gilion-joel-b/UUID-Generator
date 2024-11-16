@@ -20,7 +20,7 @@ end
 
 -- Define the :Uuid command
 vim.api.nvim_create_user_command(
-    "uuid",
+    "Uuid",
     function() M.generate_uuid() end,
     { desc = "Generate a UUID and copy it to the clipboard" }
 )
