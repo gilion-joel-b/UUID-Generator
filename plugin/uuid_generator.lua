@@ -1,8 +1,7 @@
--- ~/.config/nvim/lua/uuid_generator.lua
 local M = {}
 
--- Function to generate a UUID
 function M.generate_uuid()
+    -- Generate a UUID
     local random = math.random
     local template = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"
     local uuid = string.gsub(template, "[xy]", function(c)
